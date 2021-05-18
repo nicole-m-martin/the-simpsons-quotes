@@ -1,6 +1,6 @@
 import React from 'react';
-import SimpsonsQuote from '../../container/SimpsonsQuotes';
+import SimpsonsQuotes from '../../container/SimpsonsQuotes';
 
 export default function App() {
-  return <SimpsonsQuote />;
+  return <SimpsonsQuotes />;
 }
