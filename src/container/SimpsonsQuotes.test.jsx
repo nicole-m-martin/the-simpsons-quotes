@@ -34,6 +34,7 @@ describe('Simpsons Quotes Container', () => {
 
     return waitFor(() => {
       screen.getByText('Oh, so they have Internet on computers now!');
+      screen.getByAltText('Homer Simpson');
     });
   });
 });

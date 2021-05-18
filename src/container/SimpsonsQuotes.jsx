@@ -16,7 +16,11 @@ const SimpsonsQuotes = () => {
     <main>
       <Header />
       <Load onClick={clickHandler} />
-      <Quote quote={quote.quote} image={quote.image} />
+      <Quote
+        image={quote.image}
+        quote={quote.quote}
+        character={quote.character}
+      />
     </main>
   );
 };

@@ -3,7 +3,7 @@ export const getQuotes = async () => {
   const json = await response.json();
 
   return {
-    character: json.character,
+    character: json[0].character,
     quote: json[0].quote,
     image: json[0].image,
   };

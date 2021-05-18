@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import style from './Header.module.css';
+import style from '../styles/Header.module.css';
 import simpsons from '../../images/The_logo_simpsons_yellow.png';
 
 function Header({ title }) {
