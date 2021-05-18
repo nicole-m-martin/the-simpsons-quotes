@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen, waitFor, fireEvent } from '@testing-library/react';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
 import SimpsonsQuotes from '../container/SimpsonsQuotes';
@@ -29,9 +29,11 @@ describe('Simpsons Quotes Container', () => {
     screen.getByAltText('simpsons logo');
     screen.getByText('The Simpsons Quotes On Demand!');
 
-    // return waitFor(() => {
-    //   screen.getByAltText('Homer Simpson');
-    //   screen.getByText('Oh, so they have Internet on computers now!');
-    // });
+    const button = screen.getByRole('button');
+    fireEvent.click(button);
+
+    return waitFor(() => {
+      screen.getByText('Oh, so they have Internet on computers now!');
+    });
   });
 });
