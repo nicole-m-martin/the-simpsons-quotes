@@ -13,7 +13,7 @@ function Header({ title }) {
 }
 
 Header.defaultProps = {
-  title: 'The Simpson Quotes On Demand!',
+  title: 'The Simpsons Quotes On Demand!',
 };
 Header.propTypes = {
   title: PropTypes.string.isRequired,
